@@ -1,3 +1,17 @@
+pnpm create next-app@latest appname --yes
+typescript yes
+eslint yes
+tailwind css yes
+src no
+app router yes
+turbopack yes
+change import alias no
+
+delete all css but "@import "tailwindcss";"
+in the globals.css file
+
+create a github repo, and push the app
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
