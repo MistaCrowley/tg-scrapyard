@@ -12,6 +12,22 @@ in the globals.css file
 
 create a github repo, and push the app
 
+commit the first change
+git add .
+git commit -m "a new change"
+git push -u origin main
+
+npm run dev, then follow the vercel button to deploy it
+
+remove all returned html in page.tsx and replace it with 
+a blank div
+
+center the children content in layout.tsx
+
+see more:
+https://www.youtube.com/watch?v=b79LOKfXzOk
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
