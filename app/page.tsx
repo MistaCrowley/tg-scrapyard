@@ -2,7 +2,7 @@
 
 //import { redirect } from 'next/navigation'
 //import { revalidatePath } from 'next/cache'
-import { useEffect } from 'react'
+import { useState, useEffect } from 'react'
 //import { useRouter } from 'next/router'
 import { useRouter } from 'next/navigation'
 
@@ -10,9 +10,25 @@ const pageo = () => {
 
   const router = useRouter();
 
+  const [infoArray, setInfoArray] = useState([
+    " ",
+    "an FBI agent will be with you shortly",
+    "don't look now, it's right behind you",
+    "downloading nsfw material, please hold",
+    "opening camera, please wait",
+    "did you mean to give us your social security number?"
+    ])  
+
+  const [numChoose, setNumChoose] = useState(0)
 
   useEffect(() => {
-    //console.log('use effect ran')
+    setNumChoose(
+      Math.floor( Math.random() * ((infoArray.length-1) - 1 + 1)) + 1
+      )
+
+  }, [])
+
+  useEffect(() => {
     
     setTimeout(() => {
       //router.go(-1)
@@ -23,8 +39,18 @@ const pageo = () => {
   }, [])
 
   return (
-    <div>
-      <h1> an fbi agent will be with you shortly </h1>
+    <div className="
+      flex
+      items-center justify-center
+      w-screen
+      h-screen
+    ">
+      <h1 className="
+      text-center
+      w-300
+      h-40
+      "> {infoArray[numChoose]}
+      </h1>
     </div>
   )
 }
