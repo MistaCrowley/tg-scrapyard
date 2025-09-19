@@ -34,7 +34,7 @@ const Pageo = () => {
       //router.go(-1)
       //router.push('/')
       router.push('https://linktr.ee/trashgodz')
-    }, 3000) 
+    }, 6000) 
 
   }, [])
 
