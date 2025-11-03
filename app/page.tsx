@@ -1,5 +1,4 @@
 "use client"
-
 //import { redirect } from 'next/navigation'
 //import { revalidatePath } from 'next/cache'
 import { useState, useEffect } from 'react'
@@ -33,24 +32,40 @@ const Pageo = () => {
     setTimeout(() => {
       //router.go(-1)
       //router.push('/')
-      router.push('https://linktr.ee/trashgodz')
+      console.log("now redirect")
+      //router.push('https://linktr.ee/trashgodz')
+      //router.push('yggdrasil')
     }, 6000) 
 
   }, [])
 
   return (
     <div className="
-      flex
+      flex w-screen h-screen 
       items-center justify-center
-      w-screen
-      h-screen
-    ">
-      <h1 className="
-      text-center
-      w-300
-      h-40
-      "> {infoArray[numChoose]}
-      </h1>
+      grid
+      ">
+      <div className="
+        grid 
+        grid-rows-2 gap-0
+         justify-center
+        w-screen
+        h-20
+      ">
+          <div className="w-full grid justify-center">
+                  <span className="
+                  loading loading-infinity loading-xl text-mint-500
+                  "></span>
+          </div>
+          <div className="">
+            <h1 className="
+            text-center
+            w-full
+            "> 
+            {infoArray[numChoose]}
+            </h1>
+          </div>
+      </div>
     </div>
   )
 }

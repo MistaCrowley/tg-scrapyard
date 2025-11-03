@@ -24,6 +24,11 @@ a blank div
 
 center the children content in layout.tsx
 
+had trouble manually installing hero ui, perhaps turbopack and lightnign css were fuckery?
+
+used daisyui instead
+https://daisyui.com/docs/install/nextjs/
+
 see more:
 https://www.youtube.com/watch?v=b79LOKfXzOk
 
