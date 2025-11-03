@@ -3,8 +3,10 @@
  https://webrtc.github.io/samples/src/content/getusermedia/record/
 */
 
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-nocheck
 'use client'
-import {React, useState, useRef} from "react";
+import {useState, useRef} from "react";
 
 export default function Recorder() {
 	

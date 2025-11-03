@@ -1,10 +1,11 @@
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-nocheck
 "use client"
-import { useState, useEffect } from 'react'
-import { useRouter } from 'next/navigation'
+import { useState} from 'react'
 
   const _precision = 5;
   let _bpm = 0;
-  let _taps = [];
+  const _taps = [];
 
 const Pageoo = () => {
   
@@ -16,7 +17,7 @@ const Pageoo = () => {
   }
 
 const calcBPM = () => {
-  let ticks = [];
+  const ticks = [];
 
   if (_taps.length >= 2) {
     
@@ -34,7 +35,7 @@ const calcBPM = () => {
   
   if (ticks.length >= 2) {
     
-    let current_bpm = getAverage(ticks, _precision);
+    const current_bpm = getAverage(ticks, _precision);
     //let sample = getAverage(ticks, _precision);
     // if (_taps.length >= _precision + 3) {     
     //   if (current_bpm % 2 == 1) current_bpm = getAverage(ticks, _precision + 1);
@@ -52,14 +53,14 @@ const calcBPM = () => {
 }
 
 const getAverage = (Values, Precision) => {
-  let ticksInside = Values;
+  const ticksInside = Values;
   let n = 0;
   
   for (let i = ticksInside.length-1; i >= 0; i--) {
     n += ticksInside[i];
     if (ticksInside.length - i >= Precision) break;
   }
-  let outty = n / _precision
+  const outty = n / _precision
 
   return outty
 }

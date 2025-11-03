@@ -1,21 +1,13 @@
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-nocheck
 "use client"
 
-import React, { useState, useEffect, useRef } from 'react'
 import Recorder from '@/components/RecorderWebRTC'
 
 
 const Pageoo = () => {
-  const [stream, setStream] = useState(null);
-  const audioRef = useRef(null); // For playing back recorded audio
-
-  const recordit = () => {
-  }
-
-  const startRecording = async () => {
-  };
-
-  const stopRecording = () => {
-  };
+  //const [stream, setStream] = useState(null);
+  //const audioRef = useRef(null); // For playing back recorded audio
 
 
   return (

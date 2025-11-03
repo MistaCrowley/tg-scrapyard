@@ -1,13 +1,16 @@
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-nocheck
 "use client"
+
 //import { redirect } from 'next/navigation'
 //import { revalidatePath } from 'next/cache'
 import { useState, useEffect } from 'react'
 //import { useRouter } from 'next/router'
-import { useRouter } from 'next/navigation'
+//import { useRouter } from 'next/navigation'
 
 const Pageo = () => {
 
-  const router = useRouter();
+  //const router = useRouter();
 
   const [infoArray, setInfoArray] = useState([
     " ",

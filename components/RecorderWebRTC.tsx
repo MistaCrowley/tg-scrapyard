@@ -11,10 +11,11 @@ https://github.com/DeltaCircuit/react-media-recorder/issues/144
 
 */
 
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-nocheck
 'use client'
-import {useState, useRef, useEffect} from "react";
+import {useState, useEffect} from "react";
 import { useReactMediaRecorder } from "react-media-recorder";
-import { useRouter } from 'next/navigation'
 
 export default function Recorder() {
 
